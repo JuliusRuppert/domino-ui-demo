@@ -61,6 +61,7 @@ public class ScrollLoadingDatatableViewImpl extends BaseDemoView<HTMLDivElement>
 
         TableConfig<Contact> tableConfig = new TableConfig<>();
         tableConfig
+                .setFixedBodyHeight("700px")
                 .setFixed(true)
                 .addColumn(ColumnConfig.<Contact>create("id", "#")
                         .sortable()
